@@ -1,7 +1,6 @@
 package per.taller.todotic.app.model.entity;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
@@ -32,10 +31,10 @@ public class Contacto implements Serializable {
 	private String celular;
 	private String email;
 	@DateTimeFormat(iso = ISO.DATE)
-	private LocalDate fechaNacimiento;
 	private LocalDateTime fechaRegistro;
 	@Column(name = "fecha_act")
 	private LocalDateTime fechaActualizacion;
+	private String direccion;
 
 	@PrePersist
 	public void asignarFechaRegistro() {

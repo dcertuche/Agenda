@@ -23,6 +23,13 @@ public class Rol implements Serializable {
 	@Column(unique = true, length = 20)
 	private String nombre;
 
+	public Rol() {
+	}
+
+	public Rol(String nombre) {
+		this.nombre = nombre;
+	}
+
 	private static final long serialVersionUID = 1L;
 
 }
